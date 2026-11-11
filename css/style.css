@@ -1,4 +1,4 @@
-Style · CSS
+
 :root{--bg:#0f1226;--bg-alt:#161a36;--card:#1c2144;--text:#e8eaf6;--muted:#a0a6c8;--primary:#7c5cff;--primary-hover:#6a49f0;--border:rgba(255,255,255,.08);--shadow:0 8px 24px rgba(0,0,0,.35);--nav-h:70px}
 [data-theme="light"]{--bg:#f5f6ff;--bg-alt:#fff;--card:#fff;--text:#1b1e3c;--muted:#5b6085;--primary:#6a49f0;--primary-hover:#5636d8;--border:rgba(0,0,0,.08);--shadow:0 8px 24px rgba(30,30,80,.12)}
 *{margin:0;padding:0;box-sizing:border-box}
