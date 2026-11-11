@@ -1,0 +1,147 @@
+/* ---------- THEME VARIABLES ---------- */
+:root {
+  --bg: #0f1226;
+  --bg-alt: #161a36;
+  --card: #1c2144;
+  --text: #e8eaf6;
+  --muted: #a0a6c8;
+  --primary: #7c5cff;
+  --primary-hover: #6a49f0;
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --nav-h: 70px;
+}
+
+[data-theme="light"] {
+  --bg: #f5f6ff;
+  --bg-alt: #ffffff;
+  --card: #ffffff;
+  --text: #1b1e3c;
+  --muted: #5b6085;
+  --primary: #6a49f0;
+  --primary-hover: #5636d8;
+  --border: rgba(0, 0, 0, 0.08);
+  --shadow: 0 8px 24px rgba(30, 30, 80, 0.12);
+}
+
+/* ---------- RESET & BASE ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  padding: 90px 8% 60px;
+  min-height: 100vh;
+  scroll-margin-top: var(--nav-h);
+}
+
+section:nth-child(even) {
+  background: var(--bg-alt);
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--border);
+  z-index: 1000;
+  transition: background 0.3s;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.nav-links a {
+  font-size: 0.95rem;
+  color: var(--muted);
+  padding: 6px 2px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+#theme-toggle,
+#menu-btn {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+#theme-toggle:hover,
+#menu-btn:hover {
+  border-color: var(--primary);
+}
+
+#menu-btn {
+  display: none; /* shown only on small screens (Step 8) */
+}
