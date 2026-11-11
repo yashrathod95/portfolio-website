@@ -1,5 +1,4 @@
-Script · JS
-// Theme toggle (remembers choice)
+
 const root = document.documentElement;
 const toggle = document.getElementById('theme-toggle');
 function setTheme(t) {
