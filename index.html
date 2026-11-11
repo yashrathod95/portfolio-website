@@ -1,3 +1,4 @@
+Index · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +8,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <!-- NAVBAR -->
+ 
   <header class="navbar">
     <a href="#home" class="logo">Yash<span>.</span></a>
     <nav>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
+        <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -23,49 +23,163 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
-    <button id="menu-btn" aria-label="Open menu">☰</button>
+    <div class="nav-actions">
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button id="menu-btn" aria-label="Open menu">☰</button>
+    </div>
   </header>
-
+ 
   <main>
     <section id="home">
-      <h1>Home</h1>
-      <!-- name, photo, intro, welcome message, buttons -->
+      <div class="home-content">
+        <div class="home-text">
+          <p class="greeting">Hi, I'm</p>
+          <h1>Yash <span>Rathod</span></h1>
+          <h3 class="role">B.Tech CSE &amp; AI Student at Bosscoder School of Technology</h3>
+          <p class="welcome">Welcome to my portfolio website! Explore my journey, skills and projects. 🚀</p>
+          <div class="home-buttons">
+            <a href="#about" class="btn">About Me →</a>
+            <a href="#projects" class="btn btn-outline">View Projects →</a>
+          </div>
+        </div>
+        <div class="avatar">
+          <span>YR</span>
+          <img src="images/profile.jpg" alt="Yash Rathod" onerror="this.style.display='none'">
+        </div>
+      </div>
     </section>
-
+ 
     <section id="about">
       <h2>About Me</h2>
+      <div class="about-box">
+        <h3>Aspiring Software Engineer</h3>
+        <p>Hey, I'm Yash Rathod, a CSE-AI undergrad at Bosscoder School of Technology, passionate about technology, problem-solving and competitive programming. I'm always eager to learn new skills, explore innovative ideas and tackle challenging problems.</p>
+        <p>I'm open to collaborations, tech discussions and internship opportunities where I can learn, grow and contribute.</p>
+        <div class="info-row">
+          <div class="info-item"><strong>Interests</strong><span>Competitive Programming, Problem Solving, Front-End</span></div>
+          <div class="info-item"><strong>Goal</strong><span>Become a Software Engineer</span></div>
+          <div class="info-item"><strong>Location</strong><span>Bengaluru, India</span></div>
+        </div>
+      </div>
     </section>
-
+ 
     <section id="education">
       <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="year">2026 – 2030</span>
+          <div class="card">
+            <h3>Bachelor of Technology, CSE &amp; AI</h3>
+            <p class="muted">Bosscoder School of Technology</p>
+            <p>Department: Computer Science &amp; Engineering (AI), 1st Year</p>
+            <span class="badge">ICPC India Preliminary Contest 2026</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+  <span class="year">2026</span>
+  <div class="card">
+    <h3>Class XII (Science)</h3>
+    <p class="muted">Ujwalatai Pawar School</p>
+    <p>Board: CBSE · Stream: Science</p>
+  </div>
+</div>
+        <div class="timeline-item">
+          <span class="year">20XX – 20XX</span>
+          <div class="card">
+            <h3>Class XII</h3>
+            <p class="muted">Your school name</p>
+            <p>Board / Stream: ______, Score: ______</p>
+          </div>
+        </div>
+      </div>
     </section>
-
+ 
     <section id="skills">
       <h2>Skills</h2>
+      <div class="skills-grid">
+  <div class="card skill"><div class="skill-head"><span>💻 C++</span><span>80%</span></div><div class="bar"><div class="bar-fill" style="width:80%"></div></div></div>
+  <div class="card skill"><div class="skill-head"><span>☕ Java</span><span>65%</span></div><div class="bar"><div class="bar-fill" style="width:65%"></div></div></div>
+  <div class="card skill"><div class="skill-head"><span>🐍 Python</span><span>70%</span></div><div class="bar"><div class="bar-fill" style="width:70%"></div></div></div>
+  <div class="card skill"><div class="skill-head"><span>🌐 HTML</span><span>85%</span></div><div class="bar"><div class="bar-fill" style="width:85%"></div></div></div>
+  <div class="card skill"><div class="skill-head"><span>🎨 CSS</span><span>75%</span></div><div class="bar"><div class="bar-fill" style="width:75%"></div></div></div>
+  <div class="card skill"><div class="skill-head"><span>⚡ JavaScript</span><span>60%</span></div><div class="bar"><div class="bar-fill" style="width:60%"></div></div></div>
+  <div class="card skill"><div class="skill-head"><span>🧠 Algorithms</span><span>75%</span></div><div class="bar"><div class="bar-fill" style="width:75%"></div></div></div>
+  <div class="card skill"><div class="skill-head"><span>➗ Mathematics</span><span>80%</span></div><div class="bar"><div class="bar-fill" style="width:80%"></div></div></div>
+  <div class="card skill"><div class="skill-head"><span>🗣️ Communication</span><span>80%</span></div><div class="bar"><div class="bar-fill" style="width:80%"></div></div></div>
+  <div class="card skill"><div class="skill-head"><span>🤝 Teamwork</span><span>85%</span></div><div class="bar"><div class="bar-fill" style="width:85%"></div></div></div>
+</div>
     </section>
-
+ 
     <section id="projects">
       <h2>Projects</h2>
+      <div class="grid">
+        <article class="card project">
+          <div class="thumb">🔍</div>
+          <h3>Log Triage Parser</h3>
+          <p class="muted">Team project that reads log files and sorts them for triage. I built the parser.</p>
+          <div class="tags"><span>Python</span><span>Git</span><span>GitHub</span></div>
+          <button class="btn more-btn">View Details</button>
+          <p class="details">Built parser.py against an agreed log format shared with the log generator, and worked on a feature branch in a team GitHub repo.</p>
+        </article>
+        <article class="card project">
+          <div class="thumb">🌐</div>
+          <h3>Personal Portfolio Website</h3>
+          <p class="muted">This responsive site with dark mode, smooth navigation and a validated contact form.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <button class="btn more-btn">View Details</button>
+          <p class="details">Uses CSS variables for theming, IntersectionObserver for the active nav link, and JavaScript form validation.</p>
+        </article>
+      </div>
     </section>
-
+ 
     <section id="hobbies">
       <h2>Hobbies &amp; Interests</h2>
+      <div class="grid">
+        <div class="card hobby"><div class="icon">🏆</div><h3>Competitive Programming</h3><p class="muted">Solving timed problems and competing in contests like ICPC.</p></div>
+        <div class="card hobby"><div class="icon">🎮</div><h3>Gaming</h3><p class="muted">Strategy games that reward planning and patience.</p></div>
+        <div class="card hobby"><div class="icon">💡</div><h3>Learning New Tech</h3><p class="muted">Exploring web development and AI tools in my free time.</p></div>
+      </div>
     </section>
-
+ 
     <section id="achievements">
       <h2>Achievements</h2>
+      <div class="grid">
+        <div class="card hobby"><div class="icon">🏅</div><h3>ICPC India Preliminary Contest</h3><p class="muted">2026 · Participant, competitive programming</p></div>
+       <div class="grid">
+  <div class="card hobby"><div class="icon">🏏</div><h3>Cricket</h3><p class="muted">Playing and following the game with friends.</p></div>
+  <div class="card hobby"><div class="icon">📸</div><h3>Photography</h3><p class="muted">Capturing moments and places through the lens.</p></div>
+</div>
+      </div>
     </section>
-
+ 
     <section id="contact">
       <h2>Contact</h2>
+      <div class="contact-wrap">
+        <div class="contact-info">
+          <h3>Let's connect</h3>
+          <p>📧 <a href="mailto:yashrathod7689@gmail.com">yashrathod7689@gmail.com</a></p>
+          <p>📍 Bengaluru, Karnataka, India</p>
+          <p>💼 <a href="https://www.linkedin.com/in/yashrathod-58006a41b" target="_blank" rel="noopener">LinkedIn</a></p>
+          <p>🐙 <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a></p>
+        </div>
+        <form id="contact-form" class="card" novalidate>
+          <label for="f-name">Name</label>
+          <input type="text" id="f-name" placeholder="Your name">
+          <small class="error" id="name-err"></small>
+          <label for="f-email">Email</label>
+          <input type="email" id="f-email" placeholder="you@example.com">
+          <small class="error" id="email-err"></small>
+          <label for="f-msg">Message</label>
+          <textarea id="f-msg" rows="5" placeholder="Your message"></textarea>
+          <small class="error" id="msg-err"></small>
+          <button type="submit" class="btn">Send Message</button>
+          <p id="form-success" class="success"></p>
+        </form>
+      </div>
     </section>
   </main>
-
-  <footer>
-    <p>&copy; 2026 Yash Rathod. All rights reserved.</p>
-  </footer>
-
+ 
+  <footer><p>&copy; 2026 Yash Rathod. All rights reserved.</p></footer>
   <script src="js/script.js"></script>
 </body>
 </html>
